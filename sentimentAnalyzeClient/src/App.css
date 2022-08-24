@@ -36,3 +36,8 @@
     transform: rotate(360deg);
   }
 }
+
+#textinput{
+    color: rgb(22, 22, 22);
+    font-weight: bold;
+}
