@@ -74,14 +74,14 @@ class App extends React.Component {
 
   render() {
     return (  
-      <div className="App">
-      <button className="btn btn-info" onClick={()=>{this.renderOutput('text')}}>Text</button>
-        <button className="btn btn-dark"  onClick={()=>{this.renderOutput('url')}}>URL</button>
+      <div className="App bg-light">
+      <button className="btn btn-info m-1" onClick={()=>{this.renderOutput('text')}}>Text</button>
+        <button className="btn btn-dark m-1"  onClick={()=>{this.renderOutput('url')}}>URL</button>
         <br/><br/>
         {this.state.innercomp}
         <br/>
-        <button className="btn-primary" onClick={this.sendForSentimentAnalysis}>Analyze Sentiment</button>
-        <button className="btn-primary" onClick={this.sendForEmotionAnalysis}>Analyze Emotion</button>
+        <button className="btn-primary m-2" onClick={this.sendForSentimentAnalysis}>Analyze Sentiment</button>
+        <button className="btn-primary m-2" onClick={this.sendForEmotionAnalysis}>Analyze Emotion</button>
         <br/>
             {this.state.sentimentOutput}
       </div>
